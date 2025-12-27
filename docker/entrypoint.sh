@@ -1,9 +1,11 @@
 #!/bin/sh
 set -e
 
-echo "Waiting for blockchain startup..."
+echo "Starting Hardhat node..."
+npx hardhat node --hostname 0.0.0.0 &
 sleep 5
 
-npx hardhat run scripts/deploy.js --network docker
+echo "Deploying contracts..."
+npx hardhat run scripts/deploy.js --network localhost
 
 tail -f /dev/null
