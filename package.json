@@ -1,0 +1,14 @@
+{
+  "name": "secure-vault-authorization-system",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.1",
+    "hardhat": "^2.22.0"
+  }
+}
