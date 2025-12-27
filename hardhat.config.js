@@ -4,7 +4,7 @@ module.exports = {
   solidity: "0.8.20",
   networks: {
     docker: {
-      url: "http://blockchain:8545"
+      url: "http://host.docker.internal:8545"
     }
   }
 };
